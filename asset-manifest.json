@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.js": "/withtwojs/static/js/main.c3408f42.chunk.js",
-    "main.js.map": "/withtwojs/static/js/main.c3408f42.chunk.js.map",
+    "main.js": "/withtwojs/static/js/main.f8de49bb.chunk.js",
+    "main.js.map": "/withtwojs/static/js/main.f8de49bb.chunk.js.map",
     "runtime-main.js": "/withtwojs/static/js/runtime-main.b2ef8275.js",
     "runtime-main.js.map": "/withtwojs/static/js/runtime-main.b2ef8275.js.map",
     "static/css/2.c268c7e3.chunk.css": "/withtwojs/static/css/2.c268c7e3.chunk.css",
-    "static/js/2.b75c2287.chunk.js": "/withtwojs/static/js/2.b75c2287.chunk.js",
-    "static/js/2.b75c2287.chunk.js.map": "/withtwojs/static/js/2.b75c2287.chunk.js.map",
+    "static/js/2.bbc3cdec.chunk.js": "/withtwojs/static/js/2.bbc3cdec.chunk.js",
+    "static/js/2.bbc3cdec.chunk.js.map": "/withtwojs/static/js/2.bbc3cdec.chunk.js.map",
     "index.html": "/withtwojs/index.html",
     "static/css/2.c268c7e3.chunk.css.map": "/withtwojs/static/css/2.c268c7e3.chunk.css.map",
-    "static/js/2.b75c2287.chunk.js.LICENSE.txt": "/withtwojs/static/js/2.b75c2287.chunk.js.LICENSE.txt",
+    "static/js/2.bbc3cdec.chunk.js.LICENSE.txt": "/withtwojs/static/js/2.bbc3cdec.chunk.js.LICENSE.txt",
     "static/media/DRC.37376659.png": "/withtwojs/static/media/DRC.37376659.png",
     "static/media/IDS.c2cc392e.png": "/withtwojs/static/media/IDS.c2cc392e.png",
     "static/media/License.7968841d.jpg": "/withtwojs/static/media/License.7968841d.jpg",
@@ -28,7 +28,7 @@
   "entrypoints": [
     "static/js/runtime-main.b2ef8275.js",
     "static/css/2.c268c7e3.chunk.css",
-    "static/js/2.b75c2287.chunk.js",
-    "static/js/main.c3408f42.chunk.js"
+    "static/js/2.bbc3cdec.chunk.js",
+    "static/js/main.f8de49bb.chunk.js"
   ]
 }
