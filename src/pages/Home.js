@@ -9,12 +9,14 @@ import HeroSection from '../components/HeroSection';
 export default function Home() {
   return (
     <div>
-      <HeroSection />
-      <AboutSection />
-      <ServicesSection />
-      <ProjectsSection />
-      <TestimonialsSection />
-      <ContactBanner />
+      <div className="vanta_back" id="vanta_back">
+        <HeroSection />
+        <AboutSection />
+        <ServicesSection />
+        <ProjectsSection />
+        <TestimonialsSection />
+        <ContactBanner />
+      </div>
     </div>
   );
 }

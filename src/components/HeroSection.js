@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Fade from 'react-reveal/Fade';
 import HeroImg from '../assets/images/hero.png';
 import Button from './Button';
 import SocialMediaArrow from '../assets/images/social-media-arrow.svg';
@@ -30,6 +31,7 @@ const HeroStyles = styled.div`
       font-size: 7rem;
       color: var(--white);
       text-shadow: 5px 5px 0px var(--dark-bg);
+      z-index: 2;
     }
   }
   .hero__img {
@@ -40,6 +42,10 @@ const HeroStyles = styled.div`
     border: none;
     // border: 2px solid var(--gray-1);
     border-bottom: none;
+    z-index: 1;
+  }
+  .hero__img_z {
+    z-index: 1;
   }
   .hero__info {
     margin-top: -12rem;
@@ -157,21 +163,31 @@ export default function HeroSection() {
     <HeroStyles>
       <div className="hero">
         <div className="container">
-          <h1 className="hero__heading">
-            <span>Hello, I am</span>
-            <span className="hero__name">Prajjwal Gupta</span>
-          </h1>
-          <div className="hero__img">
-            <img src={HeroImg} alt="" />
-          </div>
-          <div className="hero__info">
-            <PText>
-              I am a prefinal year student trying to knit a fabric of innovation
-              using threads of Artificial Intelligence, Blockchain and
-              Information Security
-            </PText>
-            <Button btnText="My Works" btnLink="/projects" />
-          </div>
+          <Fade bottom>
+            <div>
+              <Fade bottom>
+                <h1 className="hero__heading">
+                  <span>Hello, I am</span>
+                  <span className="hero__name">Prajjwal Gupta</span>
+                </h1>
+              </Fade>
+              <div className="hero__img">
+                <img src={HeroImg} alt="" className="hero__img_z" />
+              </div>
+              <Fade bottom>
+                <div className="hero__info">
+                  <PText>
+                    I am a prefinal year student trying to knit a fabric of
+                    innovation using threads of Artificial Intelligence,
+                    Blockchain and Information Security
+                  </PText>
+                  <Fade bottom>
+                    <Button btnText="My Works" btnLink="/projects" />
+                  </Fade>
+                </div>
+              </Fade>
+            </div>
+          </Fade>
           <div className="hero__social">
             <div className="hero__social__indicator">
               <p>Follow</p>

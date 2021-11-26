@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Fade from 'react-reveal/Fade';
 import Button from './Button';
 import PText from './PText';
 import SectionTitle from './SectionTitle';
@@ -75,21 +76,27 @@ export default function AboutSection() {
     <AboutSectionStyles>
       <div className="container">
         <div className="aboutSection__left">
-          <SectionTitle subheading="Something" heading="About Me" />
-          <PText>
-            I am a prefinal year student in Vellore Institute of Technology,
-            Vellore majoring in Computer Science Engineering with specialization
-            in Information Security. I am actively carrying out research in
-            applications of Deep Learning.
-          </PText>
-          <div className="aboutSection__buttons">
-            <Button btnText="Works" btnLink="/projects" />
-            <Button btnText="Read More" btnLink="/about" outline />
+          <Fade left>
+            <SectionTitle subheading="Something" heading="About Me" />
+            <PText>
+              I am a prefinal year student in Vellore Institute of Technology,
+              Vellore majoring in Computer Science Engineering with
+              specialization in Information Security. I am actively carrying out
+              research in applications of Deep Learning.
+            </PText>
+          </Fade>
+          <Fade left>
+            <div className="aboutSection__buttons">
+              <Button btnText="Works" btnLink="/projects" />
+              <Button btnText="Read More" btnLink="/about" outline />
+            </div>
+          </Fade>
+        </div>
+        <Fade right>
+          <div className="aboutSection__right">
+            <img className="aboutImg" src={AboutImg} alt="Img" />
           </div>
-        </div>
-        <div className="aboutSection__right">
-          <img className="aboutImg" src={AboutImg} alt="Img" />
-        </div>
+        </Fade>
       </div>
     </AboutSectionStyles>
   );
